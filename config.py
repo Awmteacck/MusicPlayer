@@ -30,23 +30,23 @@ class Config:
         self.SESSION: str = os.environ.get("BQFZu-UAgqtUIQNmJjC92qTFvTksgND6RVa_dq49tn0fJOXb7jw9ci5Obc9EigL57PHkNMg8W6VT0tgc3hx2uDA2tNKYZgHXpUEkWLGyLkI6y3PnRTySn9VQi5upM22WP_XWcmd3fBZruIWrerNJcBwXhAMB4AmBPPWTgrzMMabhPdcia3B0yX582rfnG_DitgydYtioOxlgyLYmjQhnFQacCdA7s7SFZNY0cwIwzI_xBhPFIT8E4rST6PJSMAWvo2FwQgdL8vvf3NCGkuVPQYKJnJIJrGkz0xWFFNMIeG7oIrVh5iu4-2-D8O8VTKGV5BrJ7DMJ8-l4MqJhcq-3t9cBLMmW2wAAAAF4n1AAAA", None)
         self.BOT_TOKEN: str = os.environ.get("7902782706:AAE-IS88ujC2w8zb8CT0LAs25joNPFUw8mI", None)
         self.SUDOERS: list = [
-            int(id) for id in os.environ.get("SUDOERS", " ").split() if id.isnumeric()
+            int(id) for id in os.environ.get("6318673920", " ").split() if id.isnumeric()
         ]
         if not self.SESSION or not self.API_ID or not self.API_HASH:
             print("ERROR: SESSION, API_ID and API_HASH is required!")
             quit(0)
         self.SPOTIFY: bool = False
-        self.QUALITY: str = os.environ.get("QUALITY", "high").lower()
-        self.PREFIXES: list = os.environ.get("PREFIX", "!").split()
-        self.LANGUAGE: str = os.environ.get("LANGUAGE", "en").lower()
+        self.QUALITY: str = os.environ.get("high", "high").lower()
+        self.PREFIXES: list = os.environ.get("/", "!").split()
+        self.LANGUAGE: str = os.environ.get("en", "en").lower()
         self.STREAM_MODE: str = (
             "audio"
-            if (os.environ.get("STREAM_MODE", "audio").lower() == "audio")
+            if (os.environ.get("audio", "audio").lower() == "audio")
             else "video"
         )
-        self.ADMINS_ONLY: bool = os.environ.get("ADMINS_ONLY", False)
-        self.SPOTIFY_CLIENT_ID: str = os.environ.get("SPOTIFY_CLIENT_ID", None)
-        self.SPOTIFY_CLIENT_SECRET: str = os.environ.get("SPOTIFY_CLIENT_SECRET", None)
+        self.ADMINS_ONLY: bool = os.environ.get("false", False)
+        self.SPOTIFY_CLIENT_ID: str = os.environ.get("a7be5dee8528447a99b4b8c6e94ca681", None)
+        self.SPOTIFY_CLIENT_SECRET: str = os.environ.get("29c998e156c44aa0a4d2fc7d851d561b", None)
 
 
 config = Config()

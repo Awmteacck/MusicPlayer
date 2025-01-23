@@ -25,12 +25,12 @@ load_dotenv()
 
 class Config:
     def __init__(self) -> None:
-        self.API_ID: str = os.environ.get("29691422", None)
-        self.API_HASH: str = os.environ.get("7c2435a38e1c9f7417f62a5497db767a", None)
-        self.SESSION: str = os.environ.get("BQHFDh4ApTCzExaGAerV7IwOGfQcAr9yH40tF_iZYuWOTnBicZq3xIF8Oc_fIIUNA_PRjGg_M6uln1uQ1ybu4pobReOdo0BDyWxpbg-3ZXMQ52sSYz15stGsunN3BKk5Llm6IIzXuZwbczYCxsTNntrNTSt1DIGiakdflvf44r8ywfs4ttL-KJRaG6fAgC9kWhncYAULn4tL7E3_1_x5KOn81J6Q4AvOvX-DPiWcpXpuh2GVKsr6TNLaWHjR6VtsGgPUNbpAG0o7HJ2gL23pwR7_KHLCDD6Rn4hTU0O9D-kVJv1CkRxYn-zWF_4tScDlKfgtDF3YMGvb-SuJuAnw3Jkv-iKG5wAAAAGfUgAcAA", None)
-        self.BOT_TOKEN: str = os.environ.get("7740237222:AAEUJJBK7iLOMYTsox9epp7iG2unPQvYXmY", None)
+        self.API_ID: str = os.environ.get("29691422", 29691422)
+        self.API_HASH: str = os.environ.get("7c2435a38e1c9f7417f62a5497db767a", 7c2435a38e1c9f7417f62a5497db767a)
+        self.SESSION: str = os.environ.get("BQHFDh4ApTCzExaGAerV7IwOGfQcAr9yH40tF_iZYuWOTnBicZq3xIF8Oc_fIIUNA_PRjGg_M6uln1uQ1ybu4pobReOdo0BDyWxpbg-3ZXMQ52sSYz15stGsunN3BKk5Llm6IIzXuZwbczYCxsTNntrNTSt1DIGiakdflvf44r8ywfs4ttL-KJRaG6fAgC9kWhncYAULn4tL7E3_1_x5KOn81J6Q4AvOvX-DPiWcpXpuh2GVKsr6TNLaWHjR6VtsGgPUNbpAG0o7HJ2gL23pwR7_KHLCDD6Rn4hTU0O9D-kVJv1CkRxYn-zWF_4tScDlKfgtDF3YMGvb-SuJuAnw3Jkv-iKG5wAAAAGfUgAcAA", BQHFDh4ApTCzExaGAerV7IwOGfQcAr9yH40tF_iZYuWOTnBicZq3xIF8Oc_fIIUNA_PRjGg_M6uln1uQ1ybu4pobReOdo0BDyWxpbg-3ZXMQ52sSYz15stGsunN3BKk5Llm6IIzXuZwbczYCxsTNntrNTSt1DIGiakdflvf44r8ywfs4ttL-KJRaG6fAgC9kWhncYAULn4tL7E3_1_x5KOn81J6Q4AvOvX-DPiWcpXpuh2GVKsr6TNLaWHjR6VtsGgPUNbpAG0o7HJ2gL23pwR7_KHLCDD6Rn4hTU0O9D-kVJv1CkRxYn-zWF_4tScDlKfgtDF3YMGvb-SuJuAnw3Jkv-iKG5wAAAAGfUgAcAA)
+        self.BOT_TOKEN: str = os.environ.get("7740237222:AAEUJJBK7iLOMYTsox9epp7iG2unPQvYXmY", 7740237222:AAEUJJBK7iLOMYTsox9epp7iG2unPQvYXmY)
         self.SUDOERS: list = [
-            int(id) for id in os.environ.get("22658021", " ").split() if id.isnumeric()
+            int(id) for id in os.environ.get("22658021", "22658021").split() if id.isnumeric()
         ]
         if not self.SESSION or not self.API_ID or not self.API_HASH:
             print("ERROR: SESSION, API_ID and API_HASH is required!")

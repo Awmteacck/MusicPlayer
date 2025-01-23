@@ -25,9 +25,9 @@ load_dotenv()
 
 class Config:
     def __init__(self) -> None:
-        self.API_ID: str = os.environ.get("22658021", None)
-        self.API_HASH: str = os.environ.get("6da533e7c45bc668182b5a0f5a4497dd", None)
-        self.SESSION: str = os.environ.get("BQFZu-UAbfyV1rM_Wsj6tHYIXkebnemQJqRM0hiUh7C57tCDMvDD6kWb9A7HsW3Of3_WqRHQxYaBjChZ4dVhjRV_zgbMWmIBhU12I37l_utKuQSq4y9dPYrKU32HAzToxifmRmvo3hHYhK4gKFriiKnwXPsZsxntbHJGZXH8WEkro2i4RWt4GmQOqx7t8XE_sIzn3m0d8rsUv3ZijnGBUMKba9-wS8eoI36-HaUX0IolFJXQBLc5Gkj-XqIie5Agk8xB9NrWMC_g0j9cYkIerwdzS9TGuOJtqL5WFzxsPvVmZRIScJpiFGx5xyOmjNyzs3tkpfhIXBRv3oy9UI-AjcqjGyKt3QAAAAGvYMA0AA", None)
+        self.API_ID: str = os.environ.get("29691422", None)
+        self.API_HASH: str = os.environ.get("7c2435a38e1c9f7417f62a5497db767a", None)
+        self.SESSION: str = os.environ.get("BQHFDh4ApTCzExaGAerV7IwOGfQcAr9yH40tF_iZYuWOTnBicZq3xIF8Oc_fIIUNA_PRjGg_M6uln1uQ1ybu4pobReOdo0BDyWxpbg-3ZXMQ52sSYz15stGsunN3BKk5Llm6IIzXuZwbczYCxsTNntrNTSt1DIGiakdflvf44r8ywfs4ttL-KJRaG6fAgC9kWhncYAULn4tL7E3_1_x5KOn81J6Q4AvOvX-DPiWcpXpuh2GVKsr6TNLaWHjR6VtsGgPUNbpAG0o7HJ2gL23pwR7_KHLCDD6Rn4hTU0O9D-kVJv1CkRxYn-zWF_4tScDlKfgtDF3YMGvb-SuJuAnw3Jkv-iKG5wAAAAGfUgAcAA", None)
         self.BOT_TOKEN: str = os.environ.get("7740237222:AAEUJJBK7iLOMYTsox9epp7iG2unPQvYXmY", None)
         self.SUDOERS: list = [
             int(id) for id in os.environ.get("22658021", " ").split() if id.isnumeric()

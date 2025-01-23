@@ -27,10 +27,10 @@ class Config:
     def __init__(self) -> None:
         self.API_ID: str = os.environ.get("22658021", None)
         self.API_HASH: str = os.environ.get("6da533e7c45bc668182b5a0f5a4497dd", None)
-        self.SESSION: str = os.environ.get("BQFZu-UAgqtUIQNmJjC92qTFvTksgND6RVa_dq49tn0fJOXb7jw9ci5Obc9EigL57PHkNMg8W6VT0tgc3hx2uDA2tNKYZgHXpUEkWLGyLkI6y3PnRTySn9VQi5upM22WP_XWcmd3fBZruIWrerNJcBwXhAMB4AmBPPWTgrzMMabhPdcia3B0yX582rfnG_DitgydYtioOxlgyLYmjQhnFQacCdA7s7SFZNY0cwIwzI_xBhPFIT8E4rST6PJSMAWvo2FwQgdL8vvf3NCGkuVPQYKJnJIJrGkz0xWFFNMIeG7oIrVh5iu4-2-D8O8VTKGV5BrJ7DMJ8-l4MqJhcq-3t9cBLMmW2wAAAAF4n1AAAA", None)
-        self.BOT_TOKEN: str = os.environ.get("7902782706:AAE-IS88ujC2w8zb8CT0LAs25joNPFUw8mI", None)
+        self.SESSION: str = os.environ.get("BQFZu-UAbfyV1rM_Wsj6tHYIXkebnemQJqRM0hiUh7C57tCDMvDD6kWb9A7HsW3Of3_WqRHQxYaBjChZ4dVhjRV_zgbMWmIBhU12I37l_utKuQSq4y9dPYrKU32HAzToxifmRmvo3hHYhK4gKFriiKnwXPsZsxntbHJGZXH8WEkro2i4RWt4GmQOqx7t8XE_sIzn3m0d8rsUv3ZijnGBUMKba9-wS8eoI36-HaUX0IolFJXQBLc5Gkj-XqIie5Agk8xB9NrWMC_g0j9cYkIerwdzS9TGuOJtqL5WFzxsPvVmZRIScJpiFGx5xyOmjNyzs3tkpfhIXBRv3oy9UI-AjcqjGyKt3QAAAAGvYMA0AA", None)
+        self.BOT_TOKEN: str = os.environ.get("7740237222:AAEUJJBK7iLOMYTsox9epp7iG2unPQvYXmY", None)
         self.SUDOERS: list = [
-            int(id) for id in os.environ.get("6318673920", " ").split() if id.isnumeric()
+            int(id) for id in os.environ.get("22658021", " ").split() if id.isnumeric()
         ]
         if not self.SESSION or not self.API_ID or not self.API_HASH:
             print("ERROR: SESSION, API_ID and API_HASH is required!")
